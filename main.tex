@@ -1,176 +1,120 @@
 \documentclass{resume} % Use the custom resume.cls style
-
-\usepackage[left=0.4in, top=0.4in, right=0.4in, bottom=0.4in]{geometry} % Document margins
-\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+%----------------------------------------------------------------------------------------
+%	PACKAGES & PAGE SETUP
+%----------------------------------------------------------------------------------------
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+%----------------------------------------------------------------------------------------
+%	CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
 \name{Aniket Yadav} % Your name
 
-% Contact Information
 \address{+91 9451077727 \\ Bengaluru, Karnataka, IN}
-\address{\href{mailto:aniketyadav0078@gmail.com}{aniketyadav0078@gmail.com} \\ 
-\href{https://linkedin.com/in/aniketyadav9099/}{linkedin.com/in/aniketyadav9099/} \\ 
-\href{https://github.com/AnniiGCP}{github.com/AnniiGCP}}
+\address{
+\href{mailto:aniketyadav0078@gmail.com}{aniketyadav0078@gmail.com}
+\\ \href{https://linkedin.com/in/aniketyadav9099/}{linkedin.com/in/aniketyadav9099/}
+\\
+\href{https://github.com/AnniiGCP}{github.com/AnniiGCP}
+}
 
 \begin{document}
 
-\vspace{0.5em}
 %----------------------------------------------------------------------------------------
-% OBJECTIVE SECTION
+%	PROFILE
 %----------------------------------------------------------------------------------------
-
-\begin{rSection}{OBJECTIVE}
-   Aspiring DevOps enthusiast and programmer seeking to contribute to impactful projects through foundational skills in Linux, cloud computing, and automation concepts, while continuing to learn and grow within a forward-thinking organization.
-
+\begin{rSection}{PROFILE}
+DevOps-focused engineer with hands-on skills in Linux systems, cloud platforms (AWS/Azure/GCP), and CI/CD automation. Passionate about building reliable, automated, and secure infrastructure — comfortable working across the stack where infra meets code. 
 \end{rSection}
 
-\vspace{0.5em}
 %----------------------------------------------------------------------------------------
-% SKILLS SECTION
+% SKILLS
 %----------------------------------------------------------------------------------------
-
 \begin{rSection}{SKILLS}
-    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-        Programming Languages & Python, C, C++, Java, DSA \\
-        DevOps Skills & Linux fundamentals, Git \& GitHub, Docker basics, Cloud fundamentals (AWS, GCP), \\
-            & Basic networking concepts, CI/CD awareness \\
-        Tools & Git, VMs, Docker, Visual Studio Code, Linux Terminal, AWS (EC2, S3, Lambda) \\
-        Operating Systems & Windows, Linux (all major distributions) \\
-        Soft Skills & Leadership, Communication, Problem Solving, Teamwork, Time Management \\
-    \end{tabular}
-\end{rSection}
-
-\vspace{0.5em}
-%----------------------------------------------------------------------------------------
-% CERTIFICATIONS SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{CERTIFICATIONS}
-
-\textbf{Artificial Intelligence Fundamentals} \hfill IBM SkillBuild \\
-\href{https://www.credly.com/badges/49d3d362-b434-4d93-aee6-bd10c44cf706/public_url}{credly.com/badges/49d3d362-b434-4d93-aee6-bd10c44cf706}
-
-\vspace{0.2em}
-
-\textbf{Computational Theory: Language Principle \& Finite Automata Theory \\ 
-Java OOPs Concepts, Network Fundamentals 101 \\ 
-Programming Fundamentals: Command Line Interface \& Operating System} 
-\hfill Infosys Springboard \\
-\href{https://drive.google.com/drive/folders/1i1IKtESTSSfm8s_TK3zMJM0xUPdZy9-6}{drive.google.com}
-
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Languages & Python, Java, C \\
+Framework \& Libraries &  React, Next.js \\
+Databases & PostgreSQL, MongoDB \\
+Infrastructure & AWS (EC2, S3, Lambda), Google Cloud , Azure , Vercel \\
+Systems & Linux, Git, Bash, Docker, Jenkins \\
+AI-Assisted Development & GitHub Copilot, Claude Code, Opencode, Antigravity \\
+\end{tabular}\\
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-% PROJECTS SECTION
+%	PROJECTS
 %----------------------------------------------------------------------------------------
-
 \begin{rSection}{PROJECTS}
 
-\textbf{Study Material Upload Platform} \hfill [Dec 2024] \\
-\textit{Academic Project} \vspace{0.1em}
+
+
+
+
+%------------------------------------------
+%	ArcadeVerse
+%------------------------------------------
+\textbf{ArcadeVerse} | {\small\textit{React,Tailwind CSS, Axios, Cheerio, Vercel}} \hfill
+\href{https://github.com/AnniiGCP/Arcadeverse}{GitHub} $|$
+\href{https://arcadeverse.vercel.app/}{Live} \\
+\vspace{-1.2em}
 \begin{itemize}
-    \itemsep -3pt
-    \item Designed and developed a web-based platform for uploading, managing, and accessing study materials, similar to Google Classroom.
-    \item Implemented user authentication and role-based access control to differentiate between students and instructors.
-    \item Enabled organized content upload and retrieval to improve accessibility of study resources.
-    \item Worked on frontend-backend integration using web technologies.
-    \item Explored basic deployment concepts and application hosting workflows.
+\itemsep -3pt
+\item Built a full-stack web application that scrapes Google Cloud SkillBoost profiles, classifies earned badges, and automatically calculates Arcade points using custom scoring and milestone rules.
+\item Developed TypeScript/Express and serverless API endpoints with Axios and Cheerio for profile extraction, badge normalization, fuzzy matching, deduplication, and structured point calculation.
+\item Implemented React Context-based profile, calculation, and leaderboard management with localStorage persistence and deployed the application using Vercel
+\end{itemize}
+\vspace{-0.1em}
+
+%------------------------------------------
+%	Guardian AI
+%------------------------------------------
+\textbf{Guardian AI} | {\small\textit{FastAPI, PostgreSQL, React, PyTorch, WebSockets}} \hfill
+\href{https://github.com/AnniiGCP/Guardian-AI}{GitHub} $|$
+\href{<LIVE_URL>}{Live} \\
+\vspace{-1.2em}
+\begin{itemize}
+\itemsep -3pt
+\item Developed a modular platform for detecting online grooming by integrating speech-to-text, transformer-based text classification, LLM-assisted analysis, and real-time alerting.
+\item Designed an asynchronous backend architecture using FastAPI, PostgreSQL, WebSockets, and background task processing to coordinate ML pipelines and real-time alerts.
+\end{itemize}
+\vspace{-0.1em}
+
+%------------------------------------------
+%	QuizGenAI
+%------------------------------------------
+\textbf{QuizGenAI} | {\small\textit{FastAPI, PostgreSQL, SQLAlchemy, React}} \hfill
+\href{https://github.com/AnniiGCP/QuizGenAI}{GitHub} $|$
+\href{<LIVE_URL>}{Live} \\
+\vspace{-1.2em}
+\begin{itemize}
+\itemsep -3pt
+\item Developed backend services for an AI-powered quiz platform supporting authentication, quiz generation, answer evaluation, and leaderboard management.
+\item Built a modular FastAPI architecture integrating PostgreSQL, SQLAlchemy, shared API contracts, and LLM services for structured content generation.
 \end{itemize}
 
-\vspace{0.25em}
-
-\textbf{Face ID / College ID Based Attendance Management System} \hfill [Nov 2025] \\
-\textit{Academic Project} \vspace{0.1em}
-\begin{itemize}
-    \itemsep -3pt
-    \item Developed an automated attendance management system using face recognition and college ID verification.
-    \item Reduced manual attendance errors by implementing automated identity verification.
-    \item Designed backend logic for storing and managing attendance records.
-    \item Focused on data storage, validation, and basic security considerations.
-    \item Gained experience in system workflow design and real-world problem solving.
-\end{itemize}
-
-\end{rSection}
-
-
-
-\newpage
-%----------------------------------------------------------------------------------------
-% EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{EXPERIENCE}
-
-\textbf{Freelance Web Developer / DevOps Learner} \hfill 2023 -- Present \\
-\textit{Freelancer} \hfill \textit{Remote}
-\begin{itemize}
-    \itemsep -3pt
-    \item Worked on college and small freelance web application projects, focusing on frontend development and basic backend integration.
-    \item Assisted with deployment of web applications and explored cloud-based hosting platforms.
-    \item Used Git and GitHub for version control, collaboration, and project tracking.
-    \item Gained hands-on exposure to DevOps fundamentals including Linux environments, Docker basics, and cloud services.
-\end{itemize}
-
-\vspace{0.2em}
-
-\textbf{Google Cloud Skills Boost – Hands-on Labs} \hfill 2023 \\
-\textit{Google Cloud Arcade / Skills Boost} \hfill \textit{Online}
-\begin{itemize}
-    \itemsep -3pt
-    \item Completed hands-on labs covering core Google Cloud services such as virtual machines, cloud storage, and IAM basics.
-    \item Practiced deploying and managing applications in cloud-based environments through guided lab exercises.
-    \item Gained foundational understanding of cloud infrastructure, networking concepts, and security basics.
-\end{itemize}
-
+%------------------------------------------
+%	EndProjects
+%------------------------------------------
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-% EDUCATION SECTION
+%	EDUCATION
 %----------------------------------------------------------------------------------------
-
 \begin{rSection}{EDUCATION}
 
-    \textbf{Bachelor of Engineering}, KS Institute of Technology, Bengaluru \hfill Expected 2027 \\
-    CGPA (Upto 3rd semester): 8.28
-    \vspace{0.2em}
-
-    \textbf{Class 12th, ICSE Board}, St. Joseph's School, Gorakhpur \hfill 2022 \\
-    \vspace{0.2em}
-
-    \textbf{Class 10th, ICSE Board}, St. Joseph's School, Gorakhpur \hfill 2020 \\
-    
-\end{rSection}
-
-\vspace{0.5em}
-%----------------------------------------------------------------------------------------
-% ADDITIONAL INFORMATION SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{ADDITIONAL INFORMATION}
-
-    \textbf{Achievements}
-    \begin{itemize}
-        \item Earned 40+ verified badges on Credly through Google Cloud Skills Boost in 2024 by completing hands-on labs focused on cloud fundamentals, virtual machines, storage, IAM basics, and introductory deployment workflows. \\
-    \href{https://www.credly.com/users/aniket-yadav9099/badges}{credly.com/users/aniket-yadav9099}
-    \end{itemize}
-
-    \vspace{0.2em}
-    
-    \textbf{Extra-curricular Activities}
-    \begin{itemize}
-       
-        \item Interests: Guitar, Music, Fitness, Reading, Writing.
-    \end{itemize}
-
-    \vspace{0.2em}
-    
-    \textbf{Languages}
-    \begin{itemize}
-        \item English (Fluent)
-        \item Hindi (Fluent)
-    \end{itemize}
+{\bf Bachelor of Engineering in Computer Science and Design} \hfill {\bf Expected 2027}\\
+{ KS Institute of Technology, Bengaluru}\\
+CGPA: {\bf 8.21/10.0} (through Semester 6)
 
 \end{rSection}
 
-
-
+%----------------------------------------------------------------------------------------
+% ACHIEVEMENTS
+%----------------------------------------------------------------------------------------
+\begin{rSection}{ACHIEVEMENTS}
+\begin{itemize}
+\item Secured \textbf{Second Place} at the \textbf{National Level Hire-4-Thon Hackathon (2026)}.
+\item Interests: Playing guitar , Reading, journaling, and exploring emerging technologies.
+\end{itemize}
+\end{rSection}
 \end{document}
