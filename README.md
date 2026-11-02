@@ -52,14 +52,3 @@ pdflatex main.tex
 1. Create a new blank project in [Overleaf](https://www.overleaf.com/).
 2. Upload `main.tex` and `resume.cls`.
 3. Set the compiler to **pdfLaTeX** and compile.
-
----
-
-## 5. Author & Engineering Contact
-
-**Aniket Yadav**  
-*Computer Science & Design Engineer | Bengaluru, Karnataka, India*
-
-- **GitHub:** [@AnniiGCP](https://github.com/AnniiGCP)
-- **LinkedIn:** [linkedin.com/in/aniketyadav9099](https://linkedin.com/in/aniketyadav9099/)
-- **Email:** [aniketyadav0078@gmail.com](mailto:aniketyadav0078@gmail.com)
