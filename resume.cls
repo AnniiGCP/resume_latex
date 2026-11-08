@@ -105,7 +105,7 @@
   \sectionskip
   \MakeUppercase{{\bf #1}} % Section title
   \sectionlineskip
-  \hrule % Horizontal line
+  \hrule  % Horizontal line
   \begin{list}{}{ % List for each individual item in the section
     \setlength{\leftmargin}{0em} % Margin within the section
   }
@@ -136,4 +136,4 @@
 \def\addressskip{\smallskip} % The space between the two address (or phone/email) lines
 \def\sectionlineskip{\medskip} % The space above the horizontal line for each section 
 \def\nameskip{\medskip} % The space after your name at the top
-\def\sectionskip{\medskip} % The space after the heading section
+\def\sectionskip{\vspace{0.35em}} % The space after the heading section
