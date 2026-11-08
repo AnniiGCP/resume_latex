@@ -1,120 +1,188 @@
+
 \documentclass{resume} % Use the custom resume.cls style
+
 %----------------------------------------------------------------------------------------
-%	PACKAGES & PAGE SETUP
+% PACKAGES & PAGE SETUP
 %----------------------------------------------------------------------------------------
-\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry}
+
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
 %----------------------------------------------------------------------------------------
-%	CONTACT INFORMATION
+% CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
-\name{Aniket Yadav} % Your name
+
+
+\name{Aniket Yadav}
 
 \address{+91 9451077727 \\ Bengaluru, Karnataka, IN}
+
 \address{
 \href{mailto:aniketyadav0078@gmail.com}{aniketyadav0078@gmail.com}
-\\ \href{https://linkedin.com/in/aniketyadav9099/}{linkedin.com/in/aniketyadav9099/}
+\\
+\href{https://aniketyadav.tech}{aniketyadav.tech}
+\\
+\href{https://linkedin.com/in/aniketyadav9099/}{linkedin.com/in/aniketyadav9099/}
 \\
 \href{https://github.com/AnniiGCP}{github.com/AnniiGCP}
 }
 
 \begin{document}
 
+
 %----------------------------------------------------------------------------------------
-%	PROFILE
+% PROFILE
 %----------------------------------------------------------------------------------------
+
 \begin{rSection}{PROFILE}
-DevOps-focused engineer with hands-on skills in Linux systems, cloud platforms (AWS/Azure/GCP), and CI/CD automation. Passionate about building reliable, automated, and secure infrastructure — comfortable working across the stack where infra meets code. 
+
+Cloud \& DevOps enthusiast with hands-on experience in Linux, AWS, Azure, GCP, Docker, and CI/CD automation. Interested in cloud infrastructure, automation, and building reliable, scalable systems.
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% EDUCATION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{EDUCATION}
+
+{\bf Bachelor of Engineering in Computer Science and Design}
+\hfill {\bf Expected 2027}\\
+{KS Institute of Technology, Bengaluru} \hfill { CGPA: 8.21 (through Semester 6)}\\
+
+\vspace{-1\baselineskip}
+
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
 % SKILLS
 %----------------------------------------------------------------------------------------
+
 \begin{rSection}{SKILLS}
+
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+
 Languages & Python, Java, C \\
-Framework \& Libraries &  React, Next.js \\
+
+Fundamentals & DSA, OOP, DBMS, Operating Systems, Computer Networks \\
+
+Framework \& Libraries &FastAPI, SQLAlchemy, Pydantic, React, Next.js, Express.js\\
+
 Databases & PostgreSQL, MongoDB \\
-Infrastructure & AWS (EC2, S3, Lambda), Google Cloud , Azure , Vercel \\
-Systems & Linux, Git, Bash, Docker, Jenkins \\
-AI-Assisted Development & GitHub Copilot, Claude Code, Opencode, Antigravity \\
+
+Infrastructure & AWS (EC2, S3, Lambda), Google Cloud, Azure, Docker, Kubernetes \\
+
+DevOps \& Tools & Linux, Git, GitHub, Bash, Jenkins, CI/CD, Vercel 
+
 \end{tabular}\\
+
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	PROJECTS
+% PROJECTS
 %----------------------------------------------------------------------------------------
+
 \begin{rSection}{PROJECTS}
 
-
-
-
-
 %------------------------------------------
-%	ArcadeVerse
+% ArcadeVerse
 %------------------------------------------
-\textbf{ArcadeVerse} | {\small\textit{React,Tailwind CSS, Axios, Cheerio, Vercel}} \hfill
-\href{https://github.com/AnniiGCP/Arcadeverse}{GitHub} $|$
+
+\textbf{ArcadeVerse} | {\small\textit{React, TypeScript, Tailwind CSS, Express.js, Axios, Cheerio, Vercel}} \hfill
+\href{https://github.com/AnniiGCP/arcadeverse-dev}{GitHub} $|$
 \href{https://arcadeverse.vercel.app/}{Live} \\
+
 \vspace{-1.2em}
+
 \begin{itemize}
 \itemsep -3pt
+
 \item Built a full-stack web application that scrapes Google Cloud SkillBoost profiles, classifies earned badges, and automatically calculates Arcade points using custom scoring and milestone rules.
-\item Developed TypeScript/Express and serverless API endpoints with Axios and Cheerio for profile extraction, badge normalization, fuzzy matching, deduplication, and structured point calculation.
-\item Implemented React Context-based profile, calculation, and leaderboard management with localStorage persistence and deployed the application using Vercel
+
+\item Developed API endpoints for profile extraction, badge normalization, fuzzy matching, and deduplication; implemented profile tracking and leaderboard functionality.
+
 \end{itemize}
+
 \vspace{-0.1em}
 
 %------------------------------------------
-%	Guardian AI
+% CodeBrain AI
 %------------------------------------------
+
+\textbf{CodeBrain } | {\small\textit{React, Python, AI/LLMs, Supabase, GitHub Actions}} \hfill
+\href{https://github.com/AnniiGCP/CodeBrain}{GitHub} $|$
+\href{https://codebrain-dev.vercel.app/}{Live} \\
+
+\vspace{-1.2em}
+\begin{itemize}
+\itemsep -3pt
+
+\item Developed an AI-powered codebase understanding assistant that analyzes repositories to provide code explanations, contextual Q\&A, and automated documentation.
+
+\item Designed repository ingestion and code-analysis workflows with AI-powered documentation generation, code assistance, and CI/CD deployment integration.
+
+\end{itemize}
+
+\vspace{-0.1em}
+
+%------------------------------------------
+% Guardian AI
+%------------------------------------------
+
 \textbf{Guardian AI} | {\small\textit{FastAPI, PostgreSQL, React, PyTorch, WebSockets}} \hfill
 \href{https://github.com/AnniiGCP/Guardian-AI}{GitHub} $|$
 \href{<LIVE_URL>}{Live} \\
+
 \vspace{-1.2em}
+
 \begin{itemize}
 \itemsep -3pt
-\item Developed a modular platform for detecting online grooming by integrating speech-to-text, transformer-based text classification, LLM-assisted analysis, and real-time alerting.
-\item Designed an asynchronous backend architecture using FastAPI, PostgreSQL, WebSockets, and background task processing to coordinate ML pipelines and real-time alerts.
+
+\item Developed an AI-assisted platform for detecting potential online grooming through speech-to-text processing, transformer-based text classification, LLM-assisted analysis and real-time alerting.
+
+\item Designed an asynchronous backend using FastAPI, PostgreSQL, WebSockets, and background tasks to coordinate detection workflows and real-time alerts.
+
 \end{itemize}
+
 \vspace{-0.1em}
 
 %------------------------------------------
-%	QuizGenAI
+% QuizGenAI
 %------------------------------------------
-\textbf{QuizGenAI} | {\small\textit{FastAPI, PostgreSQL, SQLAlchemy, React}} \hfill
+
+\textbf{QuizGenAI} | {\small\textit{FastAPI, PostgreSQL, SQLAlchemy, React, LLMs}} \hfill
 \href{https://github.com/AnniiGCP/QuizGenAI}{GitHub} $|$
 \href{<LIVE_URL>}{Live} \\
+
 \vspace{-1.2em}
+
 \begin{itemize}
 \itemsep -3pt
-\item Developed backend services for an AI-powered quiz platform supporting authentication, quiz generation, answer evaluation, and leaderboard management.
-\item Built a modular FastAPI architecture integrating PostgreSQL, SQLAlchemy, shared API contracts, and LLM services for structured content generation.
+
+\item Developed an AI-powered quiz platform supporting user authentication, automated quiz generation, answer evaluation, and leaderboard management.
+
+\item Built modular backend services using FastAPI and SQLAlchemy, integrating PostgreSQL and LLM services for structured quiz content generation.
+
 \end{itemize}
 
-%------------------------------------------
-%	EndProjects
-%------------------------------------------
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	EDUCATION
+% ACHIEVEMENTS & INTERESTS
 %----------------------------------------------------------------------------------------
-\begin{rSection}{EDUCATION}
 
-{\bf Bachelor of Engineering in Computer Science and Design} \hfill {\bf Expected 2027}\\
-{ KS Institute of Technology, Bengaluru}\\
-CGPA: {\bf 8.21/10.0} (through Semester 6)
+\begin{rSection}{ACHIEVEMENTS \& INTERESTS}
 
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-% ACHIEVEMENTS
-%----------------------------------------------------------------------------------------
-\begin{rSection}{ACHIEVEMENTS}
 \begin{itemize}
+
 \item Secured \textbf{Second Place} at the \textbf{National Level Hire-4-Thon Hackathon (2026)}.
-\item Interests: Playing guitar , Reading, journaling, and exploring emerging technologies.
+
+\item Interests: Playing guitar, reading, journaling, and exploring emerging technologies.
+
 \end{itemize}
+
 \end{rSection}
+
 \end{document}
